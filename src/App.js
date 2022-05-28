@@ -6,7 +6,7 @@ function App() {
   const [query, setQuery] = useState("");
   const [cond, setCond] = useState([]);
 
-  const url = `https://api.weatherstack.com/current?access_key=d3166618b751ff3708e84044f2b10320&query=${query}`;
+  const url = `http://api.weatherstack.com/current?access_key=d3166618b751ff3708e84044f2b10320&query=${query}`;
 
   async function getData() {
     const result = await axios.get(url);
